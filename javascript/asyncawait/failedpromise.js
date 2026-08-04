@@ -19,6 +19,7 @@ async function retryApi(maxRetry = 3) {
         catch (error) {
             console.log(`attempt ${attempt} failed`, error)
             if (error === maxRetry) {
+                b
                 console.log("all attempts failed")
             }
         }
